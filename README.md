@@ -52,7 +52,7 @@ Sebuah filesystem mengatur bagaimana data disimpan di dalam sebuah system Sistem
 
 Dengan menggunakan GIT dan Github, 
 kita akan bisa bekerja dalam sebuah tim. Tujuan besarnya adalah bisa berkolaborasi mengerjakan proyek yang sama
-tanpa harus repot copy paste folder aplikasi yang terupdate. Kita juga tidak perlu menunggu rekan dalam satu tim menyelesaikan suatu program dahulu untuk berkolaborasi. Kita bisa membuat file didalam projek yang sama atau membuat code di file yang sama dan menyatukannya saat sudah selesai
+tanpa harus repot copy paste folder aplikasi yang terupdate.
 
 ### **Alur Kerja Git & Github**
 1. Untuk langkah pertama dalam menggunakan git dan github, kita perlu mendownload terlebih dahulu GitBash. 
@@ -66,52 +66,57 @@ tanpa harus repot copy paste folder aplikasi yang terupdate. Kita juga tidak per
 Repository adalah direktori proyek yang kita buat. 1 Repo =  1 Proyek = 1 Direktori. <br/>
 
   - Perintah dasar git yang lain
-    1. git status <br/>
-    Perintah git status menampilkan daftar file yang berubah bersama dengan file yang ingin di tambahkan atau di-commit. <br/>
+    1. git init <br/>
+    Perintah git digunakan untuk membuat repository di file lokal <br/>
 
-            git status
+            git init
+
     2. git add <br/>
     Perintah git add bisa digunakan untuk menambahkan file ke index. Seperti contoh, perintah berikut akan menambahkan file bernama README.md yang ada di direktori lokal ke index: <br/>
 
             git add README.md
+
     3. git commit <br/>
     Perintah git commit digunakan untuk melakukan commit pada perubahan ke head. Ingat bahwa perubahan apapun yang di-commit tidak akan langsung ke remote repository.
     
             git commit –m “Isi dengan keterangan untuk commit”
+
+    4. git branch <br/>
+    Perintah git branch bisa digunakan untuk me-list, membuat atau menghapus branch. 
+
+            git branch -M main
+        Untuk menghapus branch:
+        
+            git branch -d <branch-name>
+            
+    5. git remote
+    Perintah git remote digunakan untuk membuat remote dalam git 
+
+            git remote add origin git@github.com:Puputfatmawati/html.git
     
-    4. git log <br/>
+    6. git push
+    digunakan dalam mengirimkan perubahan file yang dilakukan setelah di commit ke remote repository
+
+            git push -u origin main
+
+    6. git log <br/>
     Dengan menjalankan peritah ini akan menampilkan daftar commits yang ada di branch beserta detail-nya.</br>
             
             git log
             
-    5. git checkout <br/>
+    7. git checkout <br/>
     Perintah git checkout bisa digunakan untuk membuat branch atau untuk berpindah diantaranya. Misalnya, perintah berikut ini akan membuat branch baru dan berpindah ke dalamnya:
     
             command git checkout -b <nama-branch>
         Untuk berpindah dari branch satu ke lainnya, gunakan:
           
             git checkout <branch-name>
-    6. git reset <br/>
+    8. git reset <br/>
     Untuk me-reset index dan bekerja dengan kondisi commit paling baru, gunakan perintah git reset:
 
             git reset --hard HEAD
-    7. git revert <br/>
-    Perintah git revert akan mengembalikan kondisi berkas yang ada dimasa lalu, selanjutnya akan digabungkan dengan commit -an terakhir dimasa sekarang.
     
-            git revert -n <nomer commit>
-    8. git branch <br/>
-    Perintah git branch bisa digunakan untuk me-list, membuat atau menghapus branch. Untuk menampilkan semua branch yang ada di repository, gunakan:
-
-            git branch
-        Untuk menghapus branch:
-        
-            git branch -d <branch-name>
-    9. git merge<br/>
-    Perintah merge digunakan untuk menggabungkan sebuah branch ke branch aktif. 
-
-            git merge <nama-branch>
-    
-    10. git clone </br>
+    9. git clone </br>
     Langkah pertama untuk membuat clone kita harus mengakses link repository yang ingin di clone, contoh nya seperti pada gambar di bawah
     ![clone.png](clone.jpeg)
     setelah itu buka git bash/cmd dan masuk ke dalam direktori penyimpanan untuk menyimpan hasil clone. kemudian ketik
@@ -164,9 +169,6 @@ Penjelasan dari contoh di atas:</br>
 - **Child element** adalah saat sebuah element berada di dalam element lain.
 
 - **Parent element** adalah element yang berada diatas element lain.
-
-### HTML Anatomy
-![HTML-anatomy.png](html-anatomy.png)
 
 ### HTML Element
 
@@ -288,10 +290,9 @@ untuk membuat sebuah paragraph maka di perlukan sebuah tag `<p></p>`
   ```
 - Tag table</br>
   table adalah salah satu elemen yang akan sering kita temukan dan gunakan. untuk membuat sebuah tabel di HTML cukup membutuhkan tiga tag, yaitu:
-  - ```<table>``` sebagai element utama.
-  - ```<tr>``` atau dikenal sebagai table row tag, digunakan untuk membuat baris baru di dalam ```<table>```.
-  - ```<td>``` atau dikenal sebagai table data tag, digunakan sebagai container (wadah) dari data yang kita mau isi di dalam `<tr>`
-  Bisa juga mengelompokkan `<tr>` di dalam suatu tabel dengan menggunakan tag table head (```<thead>``` table body ```<tbody>``` dan table foot ```<tfoot>```. Kita bisa gunakan semua atau salah satunya, sesuai kebutuhan.
+  - ```<table>``` 
+  - ```<tr>``` 
+  - ```<td>``` 
   Contoh:
   ```html
       <table>
@@ -510,10 +511,6 @@ Adalah deskripsi berupa step-step yang dibutuhkan untuk menyelesaikan suatu masa
     1. Membantu menyederhanakan suatu program yang rumit dan juga besar.
     2. Mempermudah pembuatan program yang dapat menyelesaikan masalah tertentu.
     3.  Membantu menyelesaikan suatu masalah dengan logika dan juga sistematis.
-- **Mengapa Algoritma?**
-    - Programming itu adalah algoritma dan struktur data
-    - Data struktur digunakan untuk mengelola/manajemen sebuah data
-    - Dan Algoritma yang akan menyelesaikan suatu permasalahan menggunakan data tersebut.
 
 - **Ciri-ciri ALgoritma**
   1. Input Memiliki 0 atau lebih inputan
