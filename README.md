@@ -89,12 +89,12 @@ Repository adalah direktori proyek yang kita buat. 1 Repo =  1 Proyek = 1 Direkt
         
             git branch -d <branch-name>
             
-    5. git remote
+    5. git remote</br>
     Perintah git remote digunakan untuk membuat remote dalam git 
 
             git remote add origin git@github.com:Puputfatmawati/html.git
     
-    6. git push
+    6. git push</br>
     digunakan dalam mengirimkan perubahan file yang dilakukan setelah di commit ke remote repository
 
             git push -u origin main
@@ -292,7 +292,7 @@ untuk membuat sebuah paragraph maka di perlukan sebuah tag `<p></p>`
   table adalah salah satu elemen yang akan sering kita temukan dan gunakan. untuk membuat sebuah tabel di HTML cukup membutuhkan tiga tag, yaitu:
   - ```<table>``` 
   - ```<tr>``` 
-  - ```<td>``` 
+  - ```<td>``` </br>
   Contoh:
   ```html
       <table>
@@ -597,38 +597,12 @@ Terdapat 2 macam comment :
 **Tipe data** adalah klasifikasi yang kita berikan untuk berbagai macam data yang digunakan dalam programming.
 
 Ada 6 tipe data fundamental pada Javascript:
-1. number :</br>
-Tipe data number adalah tipe data yang mengandung semua angka termasuk angka desimal.
-Contoh:
-2, 4, 1200, 23.42
-
-2. string :</br>
-Tipe data string adalah grup karakter yang ada pada keyboard laptop/PC kita yaitu letters (huruf), number (angka), spaces (spasi), symbol, dan lainnya.
-Harus diawali dan diakhiri dengan single quotes ‘ … ‘ ataupun double quotes “ … “.
-
-3. boolean :</br>
-Tipe data boolean adalah tipe data yang hanya mempunyai 2 buah nilai.
-2 buah nilai tersebut adalah TRUE (benar) or FALSE (salah).
-Analoginya adalah seperti tombol/button ON/OFF dan juga seperti sebuah jawaban antara YES/NO.
-
-4. null :
-    - Tipe data null adalah tipe data yang diartikan bahwa sebuah variable/data tidak memiliki nilai.
-    - Null berbeda dengan string kosong. String kosong masih memiliki tipe data string.
-
+1. number </br>
+2. string </br>
+3. boolean </br>
+4. null </br>
 5. undefined :</br>
-Tipe data undefined adalah tipe data yang merepresentasikan varibel/data yang tidak memiliki nilai.
-Undefined berbeda dengan null.
-Undefined didapat dari hasil berikut:
-    - Nilai dari pemanggilan variabel yang belum didefinisikan
-    - Nilai dari pemanggilan element array yang tidak ada
-    - Nilai dari pemanggilan property objek yang tidak ada
-    - Nilai dari pemanggilan fungsi yang tidak mengembalikan nilai (return)
-    - Nilai dari parameter fungsi yang tidak memiliki argumen
-
 6. object</br>
-Tipe data object adalah koleksi data yang saling berhubungan (related). Tipe data pbject dapat menyimpan data dengan tipe data apapun (number, string, boolean, dan lainnya).
-Tipe data object mempunyai key dan value.
-
 
 ## Variabel
 
@@ -642,7 +616,7 @@ Disemua bahasa pemograman, variable adalah container/tempat untuk menyimpan sebu
 **Ada 3 cara mendefinisikan sebuah variabel**:
 - var
 - let
-- const
+- const </br>
 Gunakan const jika variabel tidak dapat diubah nilainya.
 Biasanya digunakan untuk menggambarkan konstanta sebuah nilai. Seperti konstanta pi = 3.14.
 
