@@ -595,43 +595,6 @@ Terdapat 2 macam comment :
 - Single Comment
 - Multiline Comment
 
-## Tipe Data (Data Types)
-
-**Tipe data** adalah klasifikasi yang kita berikan untuk berbagai macam data yang digunakan dalam programming.
-
-Ada 6 tipe data fundamental pada Javascript:
-1. number :</br>
-Tipe data number adalah tipe data yang mengandung semua angka termasuk angka desimal.
-Contoh:
-2, 4, 1200, 23.42
-
-2. string :</br>
-Tipe data string adalah grup karakter yang ada pada keyboard laptop/PC kita yaitu letters (huruf), number (angka), spaces (spasi), symbol, dan lainnya.
-Harus diawali dan diakhiri dengan single quotes ‘ … ‘ ataupun double quotes “ … “.
-
-3. boolean :</br>
-Tipe data boolean adalah tipe data yang hanya mempunyai 2 buah nilai.
-2 buah nilai tersebut adalah TRUE (benar) or FALSE (salah).
-Analoginya adalah seperti tombol/button ON/OFF dan juga seperti sebuah jawaban antara YES/NO.
-
-4. null :
-    - Tipe data null adalah tipe data yang diartikan bahwa sebuah variable/data tidak memiliki nilai.
-    - Null berbeda dengan string kosong. String kosong masih memiliki tipe data string.
-
-5. undefined :</br>
-Tipe data undefined adalah tipe data yang merepresentasikan varibel/data yang tidak memiliki nilai.
-Undefined berbeda dengan null.
-Undefined didapat dari hasil berikut:
-    - Nilai dari pemanggilan variabel yang belum didefinisikan
-    - Nilai dari pemanggilan element array yang tidak ada
-    - Nilai dari pemanggilan property objek yang tidak ada
-    - Nilai dari pemanggilan fungsi yang tidak mengembalikan nilai (return)
-    - Nilai dari parameter fungsi yang tidak memiliki argumen
-
-6. object</br>
-Tipe data object adalah koleksi data yang saling berhubungan (related). Tipe data pbject dapat menyimpan data dengan tipe data apapun (number, string, boolean, dan lainnya).
-Tipe data object mempunyai key dan value.
-
 
 ## Variabel
 
